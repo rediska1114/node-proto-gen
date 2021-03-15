@@ -1,4 +1,5 @@
-FROM node:10.12.0-alpine
+# https://github.com/grpc/grpc-node/issues/1448
+FROM node:12.13.0-alpine
 
 RUN apk add --update --no-cache python2 && ln -sf python2 /usr/bin/python \
     && python2 -m ensurepip \
