@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:10.12.0-alpine
 
 RUN apk add --update --no-cache python2 && ln -sf python2 /usr/bin/python \
     && python2 -m ensurepip \
